@@ -24,7 +24,7 @@ public class GreetingsService {
         MessageChannel messageChanel = greetingsStreams.outboundGreetings();
         messageChanel.send(MessageBuilder
         .withPayload(greetings)
-        .setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON_VALUE)
+        .setHeader(MessageHeaders.CONTENT_TYPE, MimeTypeUtils.APPLICATION_JSON)
         .build());
 
     }
